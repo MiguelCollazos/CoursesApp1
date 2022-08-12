@@ -36,10 +36,12 @@ namespace Order.Service.Proxies.Catalog
                 Encoding.UTF8,
                 "application/json"
             );
-
+            //
             var request = await _httpClient.PutAsync(_apiUrls.CatalogUrl + "v1/stocks", content);
 
            // request.EnsureSuccessStatusCode();
+
+
         }
     }
 }
