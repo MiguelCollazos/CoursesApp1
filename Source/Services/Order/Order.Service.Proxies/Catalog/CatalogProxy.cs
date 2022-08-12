@@ -39,7 +39,7 @@ namespace Order.Service.Proxies.Catalog
 
             var request = await _httpClient.PutAsync(_apiUrls.CatalogUrl + "v1/stocks", content);
 
-            request.EnsureSuccessStatusCode();
+           // request.EnsureSuccessStatusCode();
         }
     }
 }
