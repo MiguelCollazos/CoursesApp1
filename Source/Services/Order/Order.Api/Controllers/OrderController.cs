@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Order.Api.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    
     [ApiController]
     [Route("v1/orders")]
     public class OrderController : ControllerBase

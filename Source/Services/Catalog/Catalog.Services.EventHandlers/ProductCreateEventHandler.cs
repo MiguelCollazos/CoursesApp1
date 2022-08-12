@@ -18,13 +18,13 @@ namespace Catalog.Services.EventHandlers
             _context = context;
         }
          
-        public async Task Handle(ProductCreateCommand comand, CancellationToken cancellationToken)
+        public async Task Handle(ProductCreateCommand command, CancellationToken cancellationToken)
         {
             await _context.AddAsync(new Product
             {
-                Name = comand.Name,
-                Description = comand.Description,
-                Price = (int)comand.Price
+                Name = command.Name,
+                Description = command.Description,
+                Price = command.Price
             });
 
             await _context.SaveChangesAsync();
